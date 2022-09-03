@@ -28,5 +28,6 @@ func IsHttp(url string) bool {
 	return strings.HasPrefix(url, "http://")
 }
 
-// TODO: IsHttp -> http:// --> true ya da false
-// TODO: IsHttps -> https://
+func IsHttps(url string) bool {
+	return strings.HasPrefix(url, "https://")
+}
