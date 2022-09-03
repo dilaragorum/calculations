@@ -14,3 +14,8 @@ func TestMinus(t *testing.T) {
 	result := Minus(2, 1)
 	assert.Equal(t, 1, result)
 }
+
+func TestMultiply(t *testing.T) {
+	result := Multiply(2, 2)
+	assert.Equal(t, 4, result)
+}
