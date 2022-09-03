@@ -1,6 +1,9 @@
 package calculations
 
-import "errors"
+import (
+	"errors"
+	"strings"
+)
 
 func Sum(a, b int) int {
 	return a + b
@@ -20,3 +23,10 @@ func Divide(a, b int) (int, error) {
 	}
 	return a / b, nil
 }
+
+func IsHttp(url string) bool {
+	return strings.HasPrefix(url, "http://")
+}
+
+// TODO: IsHttp -> http:// --> true ya da false
+// TODO: IsHttps -> https://

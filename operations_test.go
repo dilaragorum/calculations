@@ -19,3 +19,8 @@ func TestMultiply(t *testing.T) {
 	result := Multiply(2, 2)
 	assert.Equal(t, 4, result)
 }
+
+func TestIsHttp(t *testing.T) {
+	result := IsHttp("http")
+	assert.Equal(t, false, result)
+}
